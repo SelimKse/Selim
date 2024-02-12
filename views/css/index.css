@@ -1,0 +1,50 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+    margin: 0;
+    overflow: auto;
+  }
+
+  #text-container {
+    white-space: pre-wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 20px;
+    line-height: 1;
+    position: relative; /* position: relative olarak değiştirildi */
+  }
+
+  #text-container::after {
+    content: ''; 
+    display: inline-block;
+    border-right: 2px solid #fff;
+    animation: cursor-blink 1s infinite;
+    height: 1em; /* cursor boyutu */
+  }
+
+  #video-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+  }
+
+  #video {
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes cursor-blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
