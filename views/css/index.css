@@ -1,61 +1,124 @@
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: monospace;
-    margin: 0;
-    overflow: auto;
-  }
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  margin: 0;
+  overflow: auto;
+}
 
-  #text-container {
-    white-space: pre-wrap;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-    padding: 10px;
-    line-height: 1;
-    position: relative; /* position: relative olarak değiştirildi */
-  }
+#text-container {
+  white-space: pre-wrap;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 10px;
+  line-height: 1;
+  position: relative; /* position: relative olarak değiştirildi */
+}
 
-  #text-container::after {
-    content: ''; 
-    display: inline-block;
-    border-right: 2px solid #fff;
-    animation: cursor-blink 1s infinite;
-    height: 1em; /* cursor boyutu */
-  }
+#text-container::after {
+  content: "";
+  display: inline-block;
+  border-right: 2px solid #fff;
+  animation: cursor-blink 1s infinite;
+  height: 1em; /* cursor boyutu */
+}
 
-  #video-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 2;
-  }
+#video-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 2;
+}
 
-  #video {
-    width: 100%;
-    height: 100%;
-  }
+#video {
+  width: 100%;
+  height: 100%;
+}
 
-  #qrpage {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 2;
-  }
+#qrpage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
 
-  @keyframes cursor-blink {
-    0%, 100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #fff;
-    }
+#qrpage p {
+  font-size: 10px;
+  text-align: center;
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    border-color: transparent;
   }
+  50% {
+    border-color: #fff;
+  }
+}
+
+/* Path: views/css/qr.css */
+
+.container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 192, 203, 0.5); /* Hafif pembe ve blur efekti */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button {
+  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Pembe renk */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download-button:hover {
+  background-color: #d6448c; /* Hover efekti */
+}
+
+.download-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.download-icon {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.download-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}

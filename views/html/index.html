@@ -9,14 +9,23 @@
   <body>
     <div id="text-container"></div>
     <div id="video-container">
-      <!-- Video eklemek için uygun bir kaynak belirtin -->
       <video id="video" controls>
         <source src="../dist/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    <div id="qrpage">
-      <p>Lütfen aşağıdakı link ile qr programını indiriniz</p>
+    <div class="container" id="container">
+      <div class="box">
+        <img
+          src="../dist/download.png"
+          alt="Download Icon"
+          class="download-icon"
+        />
+        <p class="download-text">Sürprizlerle dolu bir hayat bebeğim...</p>
+        <button class="download-button" href="../dist/">
+          <a href="../dist/QR.apk" download>Tıkla</a>
+        </button>
+      </div>
     </div>
   </body>
   <script src="../js/typewriter.js"></script>
