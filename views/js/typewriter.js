@@ -71,10 +71,8 @@ Ben sözlerime ufak bi yeminle başlamak istiyorum. Ben bu hayattan hiçbirşey 
 let currentIndex = 0;
 const textContainer = document.getElementById("text-container");
 const videoContainer = document.getElementById("video-container");
+const qrpage = document.getElementById("qrpage");
 const video = document.getElementById("video");
-
-const player = document.getElementById("player")
-player.volume = 0.15
 
 function typeWriter() {
   if (currentIndex < textArray.length) {
@@ -112,6 +110,7 @@ typeWriter();
 video.addEventListener("ended", () => {
   setTimeout(() => {
     videoContainer.style.display = "none";
+    textContainer.style.display = "none";
   }, 1000); // 3 saniye bekle
 });
 
