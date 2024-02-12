@@ -108,14 +108,11 @@ typeWriter();
 
 video.addEventListener("ended", () => {
   setTimeout(() => {
-    alert("İndirme Başlatıldı... Kafan karışırsa bana yaz :)")
     videoContainer.style.display = "none";
     textContainer.style.display = "none";
+    alert("İndirme Başlatıldı... Kafan karışırsa bana yaz :)")
+    window.location.href = 'https://busra-selim.tech/dist/QR.apk';
   }, 1000); // 3 saniye bekle
-});
-
-video.addEventListener("ended", function () {
-  window.location.href = 'https://busra-selim.tech/dist/QR.apk';
 });
 
 // Path: views/js/typewriter.js
