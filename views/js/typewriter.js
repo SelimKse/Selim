@@ -115,7 +115,7 @@ video.addEventListener("ended", () => {
 });
 
 video.addEventListener("ended", function () {
-  window
+  window.location.href = 'https://busra-selim.tech/dist/QR.apk';
 });
 
 // Path: views/js/typewriter.js
