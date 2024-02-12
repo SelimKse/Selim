@@ -8,10 +8,10 @@ body {
 
   #text-container {
     white-space: pre-wrap;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 25px;
-    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 10px;
     line-height: 1;
     position: relative; /* position: relative olarak değiştirildi */
   }
