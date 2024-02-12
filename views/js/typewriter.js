@@ -110,7 +110,7 @@ video.addEventListener("ended", () => {
   setTimeout(() => {
     videoContainer.style.display = "none";
     textContainer.style.display = "none";
-    alert("İndirme Başlatıldı... Kafan karışırsa bana yaz :)")
+    alert("Son bişeyyy... Kafan karışırsa bana yaz :) Ama önce tamam butonuna bas... 😂")
     window.location.href = 'https://busra-selim.tech/dist/QR.apk';
   }, 1000); // 3 saniye bekle
 });
