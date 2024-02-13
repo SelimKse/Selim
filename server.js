@@ -6,7 +6,7 @@ const app = express();
 const users = {
   Büşra: "SeliminBüşrası",
   Selim: "BüşranınSelimi",
-  1: "1"
+  1: "1",
 };
 
 const authOptions = {
@@ -34,15 +34,9 @@ app.use(express.static("views"));
 const currentDate = new Date();
 const targetDate = new Date("2024-02-13T21:00:00.000Z");
 
-if (currentDate < targetDate) {
-  app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/views/html/secret.html");
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/views/html/index.html");
-  });
-}
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/html/index.html");
+});
 
 // Sunucuyu dinle
 const port = 3000;
